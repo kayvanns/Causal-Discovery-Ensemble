@@ -10,9 +10,9 @@ actually carries each variable's missingness -- via a collapsed panel flag, via
 its own "<col>_missing" column, or not at all -- so the consequence of a rate is
 readable off the table without rebuilding.
 
-    python missingness_report.py [path.csv]     # default: cohort/analysis.csv
+    python missingness_report.py [path.csv]     # default: cohort/analysis_final.csv
 
-Point it at a raw SQL export (cohort/base_ed.csv) to inventory that instead; the
+Point it at a raw SQL export (cohort/cohort.csv) to inventory that instead; the
 columns built later in Python are then reported as absent rather than missing.
 
 Writes reports/missingness.csv and prints the same table.

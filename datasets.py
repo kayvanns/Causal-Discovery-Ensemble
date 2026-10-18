@@ -27,7 +27,6 @@ from tiers import (
 )
 
 # Final cohort build (build_ed.py from sql/causal_discovery_features_ed.sql).
-# Not cohort/analysis.csv: that is the pre-final build with the hadm_id lab bug.
 INPUT_PATH = "cohort/analysis_final.csv"
 OUTPUT_DIR = "data"
 

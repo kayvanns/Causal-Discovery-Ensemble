@@ -8,8 +8,8 @@ import features_ed as fe
 MIMIC_HOSP = "/Users/kayvans/Documents/mimic-iv-3.1/hosp"
 MIMIC_ICU  = "/Users/kayvans/Documents/mimic-iv-3.1/icu"
 
-DEFAULT_COHORT = os.path.join(os.path.dirname(__file__), "cohort", "base_ed.csv")
-DEFAULT_OUTPUT = os.path.join(os.path.dirname(__file__), "cohort", "analysis.csv")
+DEFAULT_COHORT = os.path.join(os.path.dirname(__file__), "cohort", "cohort.csv")
+DEFAULT_OUTPUT = os.path.join(os.path.dirname(__file__), "cohort", "analysis_final.csv")
 
 
 

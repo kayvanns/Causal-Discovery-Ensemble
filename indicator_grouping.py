@@ -9,7 +9,7 @@ on the analysis cohort and reports, per group, the within-group correlations
 that justify collapsing and the cross-group correlations that justify keeping
 the groups apart.
 
-    python indicator_grouping.py [path.csv]     # default: cohort/analysis.csv
+    python indicator_grouping.py [path.csv]     # default: cohort/analysis_final.csv
 
 Correlations are Pearson r on the 0/1 indicator vectors -- for binary vectors
 that is the phi coefficient. Rows are dropped listwise on PRIMARY_OUTCOME first,

@@ -88,7 +88,7 @@ BLOODWORK_PANEL_COLS = ["bicarbonate", "sodium", "potassium", "glucose",
 BLOODWORK_PANEL_INDICATOR = "bloodwork_panel_missing"
 
 # Vitals: different mechanism (bedside monitoring cadence, not lab-order
-# batching), and only r ~ 0.16 against the chemistry/bloodwork panel, so kept
+# batching), and only r ~ 0.22 against the chemistry/bloodwork panel, so kept
 # as its own group.
 VITALS_PANEL_COLS = ["heart_rate", "blood_pressure", "spo2", "temperature_c"]
 VITALS_PANEL_INDICATOR = "vitals_panel_missing"

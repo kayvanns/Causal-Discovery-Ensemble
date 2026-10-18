@@ -16,7 +16,7 @@ Restricting to patients whose baseline window lies wholly inside the ICU stay
 (onset_to_icu_hrs >= 72) removes the first mechanism. Whatever missingness
 survives is the second. This is the check behind the rates quoted in tiers.py.
 
-    python baseline_window_check.py [path.csv]   # default: cohort/analysis.csv
+    python baseline_window_check.py [path.csv]   # default: cohort/analysis_final.csv
 
 The subgroup is small (~3.6% of the cohort), so the threshold sweep is printed
 alongside: a variable whose rate is genuinely ordering-driven stays high across
