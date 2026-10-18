@@ -1,0 +1,24 @@
+universe = container
+container_image = docker://kayvansinha/causal-env:latest
+
+executable = causal_discovery.sh
+arguments  = $(run_key) $(run_name) $(data_file) $(alpha) $(sample_size) $(depth)
+
+transfer_input_files = causal_discovery.py, tiers.py, data/$(data_file)
+transfer_output_files = $(run_name).pkl, $(run_name).png
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+log    = logs/$(run_name).log
+output = logs/$(run_name).out
+error  = logs/$(run_name).err
+
+request_cpus   = 1
+request_disk   = 2GB
+
+# Start at 16GB and step up on each retry after a memory hold.
+request_memory = 16GB
+retry_request_memory = RequestMemory*2
+
+queue run_key, run_name, data_file, alpha, sample_size, depth from fci_runs.txt

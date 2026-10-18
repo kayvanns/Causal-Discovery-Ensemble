@@ -1,0 +1,13 @@
+run,algorithm,test,cohort,imputation,family,n,adjacent,edge,mark_at_exposure,mark_at_outcome
+fci_fisherz_main_knn,FCI,fisherz,main,knn,linear,5000,yes,mechvent_0to24h --> aki_24to48h_max_stage,tail,arrow
+fci_fisherz_main_simple,FCI,fisherz,main,simple,linear,5000,yes,mechvent_0to24h --> aki_24to48h_max_stage,tail,arrow
+fci_fisherz_sens_simple,FCI,fisherz,sens,simple,linear,5000,yes,mechvent_0to24h --> aki_24to48h_max_stage,tail,arrow
+fci_mv_main,FCI,mv,main,none (test-wise deletion),linear,5000,yes,mechvent_0to24h --> aki_24to48h_max_stage,tail,arrow
+fci_rcit_main_simple,FCI,rcit,main,simple,nonparametric,5000,yes,mechvent_0to24h --> aki_24to48h_max_stage,tail,arrow
+pc_fisherz_main_knn,PC,fisherz,main,knn,linear,full,yes,mechvent_0to24h --> aki_24to48h_max_stage,tail,arrow
+pc_fisherz_main_simple,PC,fisherz,main,simple,linear,full,yes,mechvent_0to24h --> aki_24to48h_max_stage,tail,arrow
+pc_fisherz_sens_knn,PC,fisherz,sens,knn,linear,full,yes,mechvent_0to24h --> aki_24to48h_max_stage,tail,arrow
+pc_fisherz_sens_simple,PC,fisherz,sens,simple,linear,full,yes,mechvent_0to24h --> aki_24to48h_max_stage,tail,arrow
+pc_mv_main,PC,mv,main,none (test-wise deletion),linear,full,yes,mechvent_0to24h --> aki_24to48h_max_stage,tail,arrow
+pc_rcit_main_knn,PC,rcit,main,knn,nonparametric,7500,yes,mechvent_0to24h --> aki_24to48h_max_stage,tail,arrow
+pc_rcit_main_simple,PC,rcit,main,simple,nonparametric,7500,yes,mechvent_0to24h --> aki_24to48h_max_stage,tail,arrow

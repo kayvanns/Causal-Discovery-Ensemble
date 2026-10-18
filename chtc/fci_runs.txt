@@ -1,0 +1,5 @@
+fci_mv, fci_mv_main, main_raw.csv, 0.01, 5000, 4
+fci_fisherz, fci_fisherz_main_simple, main_simple.csv, 0.01, 5000, 4
+fci_fisherz, fci_fisherz_main_knn, main_knn.csv, 0.01, 5000, 4
+fci_rcit, fci_rcit_main_simple, main_simple.csv, 0.01, 5000, 4
+fci_fisherz, fci_fisherz_sens_simple, sens_simple.csv, 0.01, 5000, 4

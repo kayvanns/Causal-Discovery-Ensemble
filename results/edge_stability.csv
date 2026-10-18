@@ -1,0 +1,249 @@
+node_a,node_b,main_FCI_freq,main_FCI_k/n,main_PC_freq,main_PC_k/n,main_all_freq,main_all_k/n,main_linear_freq,main_linear_k/n,main_nonparametric_freq,main_nonparametric_k/n,sens_all_freq,sens_all_k/n,modal_edge_main,modal_share_main
+creatinine_0to24h_max,crrt_0to24h,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,creatinine_0to24h_max <-> crrt_0to24h,0.5
+fluid_balance_0to24h_ml,heart_rate_0to24h_max,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,fluid_balance_0to24h_ml --> heart_rate_0to24h_max,0.57
+crrt_0to24h,fluid_balance_0to24h_ml,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,crrt_0to24h <-> fluid_balance_0to24h_ml,0.5
+crrt_0to24h,lactate_0to24h_max,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,crrt_0to24h <-- lactate_0to24h_max,1.0
+crrt_0to24h,spo2_0to24h_min,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,crrt_0to24h <-> spo2_0to24h_min,0.5
+diuretics_0to24h,fluid_balance_0to24h_ml,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,diuretics_0to24h <-- fluid_balance_0to24h_ml,0.56
+diuretics_0to24h,potassium,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,diuretics_0to24h <-- potassium,1.0
+diuretics_0to24h,spo2_0to24h_min,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,diuretics_0to24h <-- spo2_0to24h_min,0.56
+fluid_balance_0to24h_ml,lactate_0to24h_max,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,fluid_balance_0to24h_ml <-- lactate_0to24h_max,0.56
+creatinine_baseline,diuretics_0to24h,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,creatinine_baseline --> diuretics_0to24h,1.0
+fluid_balance_0to24h_ml,sofa_0to24h_max,0.75,3/4,1.0,5/5,0.89,8/9,1.0,6/6,0.67,2/3,1.0,3/3,fluid_balance_0to24h_ml --> sofa_0to24h_max,0.5
+fluid_balance_0to24h_ml,vasopressors_0to24h,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,fluid_balance_0to24h_ml <-- vasopressors_0to24h,0.44
+gender,hemoglobin,0.75,3/4,1.0,5/5,0.89,8/9,1.0,6/6,0.67,2/3,1.0,3/3,gender --> hemoglobin,1.0
+gender,platelet,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,gender --> platelet,1.0
+glucose,potassium,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,glucose <-> potassium,0.5
+glucose,race,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,glucose <-- race,1.0
+creatinine_baseline,gender,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,creatinine_baseline <-- gender,1.0
+creatinine_0to24h_max,sofa_0to24h_max,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,creatinine_0to24h_max --> sofa_0to24h_max,0.56
+heart_rate,lactate_0to24h_max_missing,1.0,3/3,1.0,4/4,1.0,7/7,1.0,4/4,1.0,3/3,1.0,3/3,heart_rate --> lactate_0to24h_max_missing,1.0
+charlson_comorbidity_index,diuretics_0to24h,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,charlson_comorbidity_index --> diuretics_0to24h,1.0
+bun,creatinine,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,bun <-- creatinine,0.56
+bun,hemoglobin,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,bun <-> hemoglobin,0.44
+bun,inr,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,bun <-- inr,0.5
+bun,potassium,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,bun --> potassium,0.56
+bun,temperature_c,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,bun <-> temperature_c,0.33
+charlson_comorbidity_index,ckd_baseline,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,charlson_comorbidity_index --> ckd_baseline,0.44
+charlson_comorbidity_index,hemoglobin,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,charlson_comorbidity_index --> hemoglobin,1.0
+age,blood_pressure_0to24h_min,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,age --> blood_pressure_0to24h_min,1.0
+ckd_baseline,creatinine_baseline,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,ckd_baseline --> creatinine_baseline,1.0
+corticosteroids_0to24h,crrt_0to24h,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,corticosteroids_0to24h <-- crrt_0to24h,0.5
+corticosteroids_0to24h,spo2_0to24h_min,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,corticosteroids_0to24h <-> spo2_0to24h_min,0.29
+corticosteroids_0to24h,temperature_c_0to24h_max,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,corticosteroids_0to24h <-- temperature_c_0to24h_max,0.5
+creatinine,creatinine_0to24h_max,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,creatinine --> creatinine_0to24h_max,1.0
+creatinine_0to24h_max,creatinine_baseline,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,creatinine_0to24h_max <-- creatinine_baseline,1.0
+heart_rate,heart_rate_0to24h_max,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,heart_rate --> heart_rate_0to24h_max,1.0
+heart_rate,temperature_c,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,heart_rate <-- temperature_c,0.56
+bloodwork_panel_missing,vitals_panel_missing,1.0,3/3,1.0,4/4,1.0,7/7,1.0,4/4,1.0,3/3,1.0,3/3,bloodwork_panel_missing <-- vitals_panel_missing,0.71
+potassium,temperature_c,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,potassium <-- temperature_c,0.33
+mechvent_0to24h,vitals_panel_missing,1.0,3/3,1.0,4/4,1.0,7/7,1.0,4/4,1.0,3/3,1.0,3/3,mechvent_0to24h <-- vitals_panel_missing,1.0
+onset_to_icu_hrs,sodium,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,onset_to_icu_hrs --> sodium,1.0
+onset_to_icu_hrs,wbc,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,onset_to_icu_hrs --> wbc,1.0
+platelet,potassium,1.0,4/4,0.8,4/5,0.89,8/9,1.0,6/6,0.67,2/3,1.0,3/3,platelet <-> potassium,0.5
+platelet,sofa_0to24h_max,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,platelet --> sofa_0to24h_max,1.0
+potassium,sodium,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,potassium <-> sodium,0.44
+race,sodium,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,race --> sodium,1.0
+mechvent_0to24h,temperature_c_0to24h_max,0.75,3/4,1.0,5/5,0.89,8/9,1.0,6/6,0.67,2/3,1.0,3/3,mechvent_0to24h <-- temperature_c_0to24h_max,0.62
+race,spo2,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,race --> spo2,1.0
+race,vitals_panel_missing,0.67,2/3,0.75,3/4,0.71,5/7,1.0,4/4,0.33,1/3,1.0,3/3,race --> vitals_panel_missing,1.0
+sodium,vitals_panel_missing,1.0,3/3,0.75,3/4,0.86,6/7,1.0,4/4,0.67,2/3,1.0,3/3,sodium <-- vitals_panel_missing,0.5
+sofa_0to24h_max,vasopressors_0to24h,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,sofa_0to24h_max <-- vasopressors_0to24h,0.89
+spo2,spo2_0to24h_min,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,spo2 --> spo2_0to24h_min,1.0
+temperature_c,temperature_c_0to24h_max,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,temperature_c --> temperature_c_0to24h_max,1.0
+mechvent_0to24h,vasopressors_0to24h,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,mechvent_0to24h --> vasopressors_0to24h,0.56
+mechvent_0to24h,sofa_0to24h_max,0.75,3/4,1.0,5/5,0.89,8/9,1.0,6/6,0.67,2/3,1.0,3/3,mechvent_0to24h <-- sofa_0to24h_max,0.5
+heart_rate_0to24h_max,spo2_0to24h_min,1.0,4/4,0.8,4/5,0.89,8/9,1.0,6/6,0.67,2/3,1.0,3/3,heart_rate_0to24h_max <-> spo2_0to24h_min,0.5
+inr_missing,mechvent_0to24h,0.67,2/3,0.5,2/4,0.57,4/7,1.0,4/4,0.0,0/3,0.67,2/3,inr_missing --> mechvent_0to24h,1.0
+heart_rate_0to24h_max,temperature_c_0to24h_max,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,heart_rate_0to24h_max <-- temperature_c_0to24h_max,0.67
+hemoglobin,inr,1.0,4/4,0.8,4/5,0.89,8/9,1.0,6/6,0.67,2/3,1.0,3/3,hemoglobin <-- inr,0.5
+hemoglobin,sodium,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,hemoglobin <-> sodium,0.5
+hemoglobin,spo2,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,hemoglobin <-> spo2,0.5
+inr,inr_missing,1.0,3/3,1.0,4/4,1.0,7/7,1.0,4/4,1.0,3/3,0.67,2/3,inr <-> inr_missing,0.43
+inr_missing,lactate_0to24h_max_missing,0.67,2/3,0.75,3/4,0.71,5/7,1.0,4/4,0.33,1/3,1.0,3/3,inr_missing --> lactate_0to24h_max_missing,1.0
+inr_missing,onset_to_icu_hrs,1.0,3/3,1.0,4/4,1.0,7/7,1.0,4/4,1.0,3/3,1.0,3/3,inr_missing <-- onset_to_icu_hrs,1.0
+mechvent_0to24h,race,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,mechvent_0to24h <-- race,1.0
+lactate_0to24h_max,sofa_0to24h_max,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,lactate_0to24h_max --> sofa_0to24h_max,0.56
+lactate_0to24h_max,spo2_0to24h_min,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,lactate_0to24h_max <-> spo2_0to24h_min,0.5
+lactate_0to24h_max_missing,mechvent_0to24h,1.0,3/3,0.75,3/4,0.86,6/7,1.0,4/4,0.67,2/3,1.0,3/3,lactate_0to24h_max_missing <-- mechvent_0to24h,0.5
+lactate_0to24h_max_missing,onset_to_icu_hrs,1.0,3/3,1.0,4/4,1.0,7/7,1.0,4/4,1.0,3/3,1.0,3/3,lactate_0to24h_max_missing <-- onset_to_icu_hrs,1.0
+lactate_0to24h_max_missing,vasopressors_0to24h,1.0,3/3,0.75,3/4,0.86,6/7,1.0,4/4,0.67,2/3,1.0,3/3,lactate_0to24h_max_missing <-- vasopressors_0to24h,0.67
+lactate_0to24h_max_missing,wbc_0to24h_max,0.67,2/3,0.5,2/4,0.57,4/7,1.0,4/4,0.0,0/3,1.0,3/3,lactate_0to24h_max_missing <-> wbc_0to24h_max,0.5
+bun,ckd_baseline,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,bun <-- ckd_baseline,1.0
+wbc,wbc_0to24h_max,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,wbc --> wbc_0to24h_max,1.0
+antibiotics_0to24h,mechvent_24to48h,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,antibiotics_0to24h --> mechvent_24to48h,1.0
+blood_pressure,hemoglobin,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,blood_pressure <-- hemoglobin,0.44
+bicarbonate,lactate_0to24h_max,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,bicarbonate --> lactate_0to24h_max,1.0
+aki_0to24h_max_stage,crrt_0to24h,1.0,4/4,0.6,3/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,aki_0to24h_max_stage --> crrt_0to24h,0.43
+blood_pressure,vasopressors_0to24h,0.75,3/4,1.0,5/5,0.89,8/9,1.0,6/6,0.67,2/3,1.0,3/3,blood_pressure --> vasopressors_0to24h,1.0
+blood_pressure_0to24h_min,gender,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,blood_pressure_0to24h_min <-- gender,1.0
+aki_0to24h_max_stage,creatinine_0to24h_max,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,aki_0to24h_max_stage --> creatinine_0to24h_max,0.56
+aki_0to24h_max_stage,aki_24to48h_max_stage,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,aki_0to24h_max_stage --> aki_24to48h_max_stage,1.0
+aki_24to48h_max_stage,mechvent_24to48h,0.75,3/4,1.0,5/5,0.89,8/9,1.0,6/6,0.67,2/3,1.0,3/3,aki_24to48h_max_stage <-- mechvent_24to48h,0.62
+blood_pressure,blood_pressure_0to24h_min,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,blood_pressure --> blood_pressure_0to24h_min,1.0
+aki_24to48h_max_stage,sofa_0to24h_max,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,aki_24to48h_max_stage <-- sofa_0to24h_max,1.0
+aki_24to48h_max_stage,mechvent_0to24h,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,aki_24to48h_max_stage <-- mechvent_0to24h,1.0
+age,spo2,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,age --> spo2,1.0
+age,sodium,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,age --> sodium,1.0
+aki_24to48h_max_stage,spo2_0to24h_min,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,aki_24to48h_max_stage <-- spo2_0to24h_min,1.0
+blood_pressure_0to24h_min,sofa_0to24h_max,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,blood_pressure_0to24h_min <-> sofa_0to24h_max,0.43
+blood_pressure_0to24h_min,spo2_0to24h_min,0.75,3/4,1.0,5/5,0.89,8/9,1.0,6/6,0.67,2/3,1.0,3/3,blood_pressure_0to24h_min <-- spo2_0to24h_min,0.5
+antibiotics_0to24h,fluid_balance_0to24h_ml,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,antibiotics_0to24h <-> fluid_balance_0to24h_ml,0.43
+age,charlson_comorbidity_index,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,age --> charlson_comorbidity_index,1.0
+aki_24to48h_max_stage,lactate_0to24h_max,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,aki_24to48h_max_stage <-- lactate_0to24h_max,1.0
+bloodwork_panel_missing,onset_to_icu_hrs,0.67,2/3,0.5,2/4,0.57,4/7,1.0,4/4,0.0,0/3,0.67,2/3,bloodwork_panel_missing <-- onset_to_icu_hrs,1.0
+bloodwork_panel_missing,inr_missing,1.0,3/3,1.0,4/4,1.0,7/7,1.0,4/4,1.0,3/3,1.0,3/3,bloodwork_panel_missing <-- inr_missing,0.57
+antibiotics_0to24h,onset_to_icu_hrs,0.75,3/4,0.6,3/5,0.67,6/9,1.0,6/6,0.0,0/3,1.0,3/3,antibiotics_0to24h <-- onset_to_icu_hrs,1.0
+antibiotics_0to24h,vasopressors_0to24h,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,antibiotics_0to24h <-- vasopressors_0to24h,0.86
+antibiotics_0to24h,lactate_0to24h_max_missing,0.67,2/3,0.5,2/4,0.57,4/7,1.0,4/4,0.0,0/3,1.0,3/3,antibiotics_0to24h --> lactate_0to24h_max_missing,0.75
+aki_24to48h_max_stage,charlson_comorbidity_index,0.75,3/4,1.0,5/5,0.89,8/9,1.0,6/6,0.67,2/3,1.0,3/3,aki_24to48h_max_stage <-- charlson_comorbidity_index,1.0
+blood_pressure_0to24h_min,vasopressors_0to24h,1.0,4/4,1.0,5/5,1.0,9/9,1.0,6/6,1.0,3/3,1.0,3/3,blood_pressure_0to24h_min <-- vasopressors_0to24h,0.44
+aki_0to24h_max_stage,fluid_balance_0to24h_ml,0.75,3/4,0.8,4/5,0.78,7/9,1.0,6/6,0.33,1/3,1.0,3/3,aki_0to24h_max_stage --> fluid_balance_0to24h_ml,0.57
+bicarbonate,potassium,0.75,3/4,0.6,3/5,0.67,6/9,0.83,5/6,0.33,1/3,0.33,1/3,bicarbonate --> potassium,0.5
+fluid_balance_0to24h_ml,mechvent_0to24h,0.5,2/4,0.8,4/5,0.67,6/9,0.83,5/6,0.33,1/3,0.67,2/3,fluid_balance_0to24h_ml <-> mechvent_0to24h,0.33
+diuretics_0to24h,spo2,0.5,2/4,0.6,3/5,0.56,5/9,0.83,5/6,0.0,0/3,1.0,3/3,diuretics_0to24h <-- spo2,1.0
+bicarbonate,sodium,0.75,3/4,1.0,5/5,0.89,8/9,0.83,5/6,1.0,3/3,0.67,2/3,bicarbonate <-- sodium,0.5
+creatinine_0to24h_max,crrt_24to48h,0.75,3/4,0.4,2/5,0.56,5/9,0.83,5/6,0.0,0/3,1.0,3/3,creatinine_0to24h_max --> crrt_24to48h,1.0
+aki_0to24h_max_stage,onset_to_icu_hrs,0.75,3/4,0.6,3/5,0.67,6/9,0.83,5/6,0.33,1/3,0.67,2/3,aki_0to24h_max_stage <-- onset_to_icu_hrs,1.0
+blood_pressure,heart_rate,0.5,2/4,1.0,5/5,0.78,7/9,0.83,5/6,0.67,2/3,1.0,3/3,blood_pressure --> heart_rate,0.71
+bicarbonate,diuretics_0to24h,0.75,3/4,0.6,3/5,0.67,6/9,0.83,5/6,0.33,1/3,1.0,3/3,bicarbonate --> diuretics_0to24h,1.0
+bicarbonate,glucose,0.75,3/4,0.6,3/5,0.67,6/9,0.83,5/6,0.33,1/3,1.0,3/3,bicarbonate <-- glucose,0.5
+blood_pressure_0to24h_min,fluid_balance_0to24h_ml,0.5,2/4,0.6,3/5,0.56,5/9,0.83,5/6,0.0,0/3,0.67,2/3,blood_pressure_0to24h_min <-- fluid_balance_0to24h_ml,0.6
+platelet,wbc,0.5,2/4,0.8,4/5,0.67,6/9,0.83,5/6,0.33,1/3,1.0,3/3,platelet --> wbc,0.5
+age,temperature_c_0to24h_max,0.5,2/4,0.8,4/5,0.67,6/9,0.83,5/6,0.33,1/3,1.0,3/3,age --> temperature_c_0to24h_max,1.0
+antibiotics_0to24h,blood_pressure_0to24h_min,0.75,3/4,0.4,2/5,0.56,5/9,0.83,5/6,0.0,0/3,1.0,3/3,antibiotics_0to24h --> blood_pressure_0to24h_min,0.4
+bun,temperature_c_0to24h_max,0.5,2/4,0.6,3/5,0.56,5/9,0.83,5/6,0.0,0/3,1.0,3/3,bun --> temperature_c_0to24h_max,1.0
+heart_rate,platelet,0.5,2/4,0.6,3/5,0.56,5/9,0.83,5/6,0.0,0/3,1.0,3/3,heart_rate <-- platelet,0.6
+heart_rate,spo2,0.5,2/4,0.6,3/5,0.56,5/9,0.83,5/6,0.0,0/3,1.0,3/3,heart_rate <-- spo2,0.6
+age,heart_rate_0to24h_max,0.75,3/4,0.8,4/5,0.78,7/9,0.83,5/6,0.67,2/3,1.0,3/3,age --> heart_rate_0to24h_max,1.0
+age,ckd_baseline,0.5,2/4,0.6,3/5,0.56,5/9,0.83,5/6,0.0,0/3,1.0,3/3,age --> ckd_baseline,1.0
+fluid_balance_0to24h_ml,lactate_0to24h_max_missing,0.33,1/3,1.0,4/4,0.71,5/7,0.75,3/4,0.67,2/3,0.67,2/3,fluid_balance_0to24h_ml <-- lactate_0to24h_max_missing,0.8
+inr_missing,temperature_c,0.33,1/3,0.5,2/4,0.43,3/7,0.75,3/4,0.0,0/3,1.0,3/3,inr_missing --> temperature_c,0.67
+lactate_0to24h_max_missing,vitals_panel_missing,0.33,1/3,0.75,3/4,0.57,4/7,0.75,3/4,0.33,1/3,0.33,1/3,lactate_0to24h_max_missing <-- vitals_panel_missing,1.0
+glucose,lactate_0to24h_max_missing,0.67,2/3,0.5,2/4,0.57,4/7,0.75,3/4,0.33,1/3,0.67,2/3,glucose --> lactate_0to24h_max_missing,1.0
+bloodwork_panel_missing,glucose,0.67,2/3,1.0,4/4,0.86,6/7,0.75,3/4,1.0,3/3,0.67,2/3,bloodwork_panel_missing --> glucose,0.33
+creatinine_0to24h_max,wbc_0to24h_max,0.5,2/4,0.4,2/5,0.44,4/9,0.67,4/6,0.0,0/3,1.0,3/3,creatinine_0to24h_max <-> wbc_0to24h_max,0.5
+bicarbonate,creatinine,0.5,2/4,0.6,3/5,0.56,5/9,0.67,4/6,0.33,1/3,1.0,3/3,bicarbonate <-- creatinine,0.6
+corticosteroids_0to24h,gender,0.5,2/4,0.4,2/5,0.44,4/9,0.67,4/6,0.0,0/3,0.67,2/3,corticosteroids_0to24h <-- gender,1.0
+bicarbonate,corticosteroids_0to24h,0.25,1/4,0.6,3/5,0.44,4/9,0.67,4/6,0.0,0/3,0.67,2/3,bicarbonate --> corticosteroids_0to24h,1.0
+blood_pressure,race,0.25,1/4,0.8,4/5,0.56,5/9,0.67,4/6,0.33,1/3,0.67,2/3,blood_pressure <-- race,1.0
+blood_pressure,inr,0.25,1/4,0.6,3/5,0.44,4/9,0.67,4/6,0.0,0/3,0.67,2/3,blood_pressure <-- inr,0.5
+blood_pressure,bun,0.25,1/4,0.6,3/5,0.44,4/9,0.67,4/6,0.0,0/3,0.67,2/3,blood_pressure <-- bun,0.5
+aki_24to48h_max_stage,crrt_24to48h,0.5,2/4,0.4,2/5,0.44,4/9,0.67,4/6,0.0,0/3,1.0,3/3,aki_24to48h_max_stage <-> crrt_24to48h,0.5
+bicarbonate,spo2,0.25,1/4,0.6,3/5,0.44,4/9,0.67,4/6,0.0,0/3,1.0,3/3,bicarbonate --> spo2,0.75
+heart_rate_0to24h_max,lactate_0to24h_max,0.75,3/4,0.6,3/5,0.67,6/9,0.67,4/6,0.67,2/3,1.0,3/3,heart_rate_0to24h_max --> lactate_0to24h_max,0.5
+crrt_24to48h,sofa_0to24h_max,0.5,2/4,0.4,2/5,0.44,4/9,0.67,4/6,0.0,0/3,1.0,3/3,crrt_24to48h <-- sofa_0to24h_max,1.0
+age,heart_rate,0.25,1/4,0.8,4/5,0.56,5/9,0.67,4/6,0.33,1/3,1.0,3/3,age --> heart_rate,1.0
+lactate_0to24h_max,temperature_c_0to24h_max,0.25,1/4,0.4,2/5,0.33,3/9,0.5,3/6,0.0,0/3,1.0,3/3,lactate_0to24h_max <-- temperature_c_0to24h_max,0.67
+bloodwork_panel_missing,bun,0.33,1/3,0.25,1/4,0.29,2/7,0.5,2/4,0.0,0/3,0.67,2/3,bloodwork_panel_missing <-> bun,0.5
+bloodwork_panel_missing,hemoglobin,0.33,1/3,0.25,1/4,0.29,2/7,0.5,2/4,0.0,0/3,0.0,0/3,bloodwork_panel_missing <-> hemoglobin,0.5
+inr,sofa_0to24h_max,0.0,0/4,0.6,3/5,0.33,3/9,0.5,3/6,0.0,0/3,0.0,0/3,inr --> sofa_0to24h_max,1.0
+charlson_comorbidity_index,glucose,0.0,0/4,0.6,3/5,0.33,3/9,0.5,3/6,0.0,0/3,0.67,2/3,charlson_comorbidity_index --> glucose,1.0
+charlson_comorbidity_index,mechvent_0to24h,0.25,1/4,0.4,2/5,0.33,3/9,0.5,3/6,0.0,0/3,1.0,3/3,charlson_comorbidity_index --> mechvent_0to24h,1.0
+glucose,hemoglobin,0.25,1/4,0.4,2/5,0.33,3/9,0.5,3/6,0.0,0/3,0.33,1/3,glucose <-- hemoglobin,0.67
+aki_24to48h_max_stage,lactate_0to24h_max_missing,0.0,0/3,0.5,2/4,0.29,2/7,0.5,2/4,0.0,0/3,0.67,2/3,aki_24to48h_max_stage <-- lactate_0to24h_max_missing,1.0
+creatinine,creatinine_baseline,0.25,1/4,0.4,2/5,0.33,3/9,0.5,3/6,0.0,0/3,0.33,1/3,creatinine <-- creatinine_baseline,1.0
+crrt_24to48h,lactate_0to24h_max,0.0,0/4,0.6,3/5,0.33,3/9,0.5,3/6,0.0,0/3,0.67,2/3,crrt_24to48h <-- lactate_0to24h_max,1.0
+lactate_0to24h_max_missing,sofa_0to24h_max,0.0,0/3,1.0,4/4,0.57,4/7,0.5,2/4,0.67,2/3,0.67,2/3,lactate_0to24h_max_missing <-- sofa_0to24h_max,0.75
+bicarbonate,lactate_0to24h_max_missing,0.0,0/3,0.5,2/4,0.29,2/7,0.5,2/4,0.0,0/3,0.0,0/3,bicarbonate --> lactate_0to24h_max_missing,1.0
+onset_to_icu_hrs,temperature_c_0to24h_max,0.0,0/4,0.6,3/5,0.33,3/9,0.5,3/6,0.0,0/3,0.67,2/3,onset_to_icu_hrs --> temperature_c_0to24h_max,1.0
+mechvent_0to24h,temperature_c,0.5,2/4,0.2,1/5,0.33,3/9,0.5,3/6,0.0,0/3,0.0,0/3,mechvent_0to24h <-- temperature_c,1.0
+gender,inr_missing,0.0,0/3,0.5,2/4,0.29,2/7,0.5,2/4,0.0,0/3,0.0,0/3,gender --> inr_missing,1.0
+blood_pressure_0to24h_min,lactate_0to24h_max_missing,0.67,2/3,0.0,0/4,0.29,2/7,0.5,2/4,0.0,0/3,0.33,1/3,blood_pressure_0to24h_min <-> lactate_0to24h_max_missing,1.0
+lactate_0to24h_max,vitals_panel_missing,0.0,0/3,0.5,2/4,0.29,2/7,0.5,2/4,0.0,0/3,0.67,2/3,lactate_0to24h_max <-- vitals_panel_missing,1.0
+aki_24to48h_max_stage,temperature_c,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.67,2/3,aki_24to48h_max_stage <-- temperature_c,1.0
+age,hemoglobin,0.0,0/4,0.6,3/5,0.33,3/9,0.33,2/6,0.33,1/3,0.67,2/3,age --> hemoglobin,1.0
+age,wbc,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.67,2/3,age --> wbc,1.0
+aki_24to48h_max_stage,blood_pressure_0to24h_min,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.67,2/3,aki_24to48h_max_stage <-- blood_pressure_0to24h_min,1.0
+aki_24to48h_max_stage,inr,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.67,2/3,aki_24to48h_max_stage <-- inr,1.0
+antibiotics_0to24h,heart_rate,0.25,1/4,0.2,1/5,0.22,2/9,0.33,2/6,0.0,0/3,0.0,0/3,antibiotics_0to24h <-- heart_rate,1.0
+lactate_0to24h_max,race,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.33,1/3,lactate_0to24h_max <-- race,1.0
+race,wbc,0.5,2/4,0.0,0/5,0.22,2/9,0.33,2/6,0.0,0/3,0.33,1/3,race --> wbc,1.0
+antibiotics_0to24h,corticosteroids_0to24h,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.67,2/3,antibiotics_0to24h <-- corticosteroids_0to24h,1.0
+age,bicarbonate,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.33,1/3,age --> bicarbonate,1.0
+ckd_baseline,heart_rate,0.5,2/4,0.0,0/5,0.22,2/9,0.33,2/6,0.0,0/3,0.33,1/3,ckd_baseline --> heart_rate,1.0
+blood_pressure_0to24h_min,onset_to_icu_hrs,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.67,2/3,blood_pressure_0to24h_min <-- onset_to_icu_hrs,1.0
+creatinine,potassium,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.67,2/3,creatinine --> potassium,1.0
+crrt_24to48h,heart_rate_0to24h_max,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.67,2/3,crrt_24to48h <-- heart_rate_0to24h_max,1.0
+bicarbonate,wbc,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.33,1/3,bicarbonate <-- wbc,1.0
+fluid_balance_0to24h_ml,glucose,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.67,2/3,fluid_balance_0to24h_ml <-- glucose,1.0
+glucose,platelet,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.0,0/3,glucose <-- platelet,1.0
+ckd_baseline,diuretics_0to24h,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.67,2/3,ckd_baseline --> diuretics_0to24h,1.0
+creatinine_0to24h_max,vasopressors_0to24h,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.67,2/3,creatinine_0to24h_max --> vasopressors_0to24h,1.0
+charlson_comorbidity_index,temperature_c_0to24h_max,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.33,1/3,charlson_comorbidity_index --> temperature_c_0to24h_max,1.0
+charlson_comorbidity_index,potassium,0.0,0/4,0.4,2/5,0.22,2/9,0.33,2/6,0.0,0/3,0.67,2/3,charlson_comorbidity_index --> potassium,1.0
+heart_rate,inr_missing,0.0,0/3,0.25,1/4,0.14,1/7,0.25,1/4,0.0,0/3,0.33,1/3,heart_rate <-- inr_missing,1.0
+temperature_c,vitals_panel_missing,0.33,1/3,0.75,3/4,0.57,4/7,0.25,1/4,1.0,3/3,0.33,1/3,temperature_c <-- vitals_panel_missing,0.5
+bloodwork_panel_missing,wbc,0.0,0/3,0.5,2/4,0.29,2/7,0.25,1/4,0.33,1/3,0.0,0/3,bloodwork_panel_missing <-- wbc,1.0
+bloodwork_panel_missing,potassium,0.0,0/3,0.75,3/4,0.43,3/7,0.25,1/4,0.67,2/3,0.33,1/3,bloodwork_panel_missing --> potassium,1.0
+corticosteroids_0to24h,spo2,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.33,1/3,corticosteroids_0to24h <-- spo2,1.0
+creatinine,crrt_0to24h,0.25,1/4,0.0,0/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,creatinine --> crrt_0to24h,1.0
+corticosteroids_0to24h,mechvent_0to24h,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.33,1/3,corticosteroids_0to24h <-- mechvent_0to24h,1.0
+onset_to_icu_hrs,temperature_c,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.33,1/3,onset_to_icu_hrs --> temperature_c,1.0
+bun,glucose,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.33,1/3,bun --> glucose,1.0
+bun,creatinine_baseline,0.25,1/4,0.0,0/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,bun <-- creatinine_baseline,1.0
+creatinine_baseline,heart_rate_0to24h_max,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,creatinine_baseline --> heart_rate_0to24h_max,1.0
+potassium,race,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,potassium <-- race,1.0
+onset_to_icu_hrs,potassium,0.25,1/4,0.0,0/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,onset_to_icu_hrs --> potassium,1.0
+blood_pressure,mechvent_0to24h,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.33,1/3,blood_pressure --> mechvent_0to24h,1.0
+creatinine,crrt_24to48h,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,creatinine --> crrt_24to48h,1.0
+creatinine_baseline,inr,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.33,1/3,creatinine_baseline --> inr,1.0
+inr,lactate_0to24h_max,0.25,1/4,0.0,0/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,inr --> lactate_0to24h_max,1.0
+inr,race,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.33,1/3,inr <-- race,1.0
+antibiotics_0to24h,wbc_0to24h_max,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,antibiotics_0to24h <-- wbc_0to24h_max,1.0
+creatinine_baseline,spo2_0to24h_min,0.25,1/4,0.0,0/5,0.11,1/9,0.17,1/6,0.0,0/3,0.33,1/3,creatinine_baseline --> spo2_0to24h_min,1.0
+glucose,sodium,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.33,1/3,glucose --> sodium,1.0
+blood_pressure,glucose,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.33,1/3,blood_pressure <-- glucose,1.0
+crrt_24to48h,fluid_balance_0to24h_ml,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.33,1/3,crrt_24to48h <-- fluid_balance_0to24h_ml,1.0
+bicarbonate,fluid_balance_0to24h_ml,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,bicarbonate --> fluid_balance_0to24h_ml,1.0
+gender,temperature_c,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.33,1/3,gender --> temperature_c,1.0
+inr,sodium,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,inr --> sodium,1.0
+glucose,inr,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,glucose <-- inr,1.0
+lactate_0to24h_max,temperature_c,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,lactate_0to24h_max <-- temperature_c,1.0
+glucose,lactate_0to24h_max,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,glucose --> lactate_0to24h_max,1.0
+mechvent_0to24h,sodium,0.0,0/4,0.2,1/5,0.11,1/9,0.17,1/6,0.0,0/3,0.0,0/3,mechvent_0to24h <-- sodium,1.0
+heart_rate,vitals_panel_missing,0.0,0/3,0.25,1/4,0.14,1/7,0.0,0/4,0.33,1/3,0.0,0/3,heart_rate <-- vitals_panel_missing,1.0
+bun,wbc,0.0,0/4,0.0,0/5,0.0,0/9,0.0,0/6,0.0,0/3,0.33,1/3,,
+bloodwork_panel_missing,platelet,0.33,1/3,0.0,0/4,0.14,1/7,0.0,0/4,0.33,1/3,0.33,1/3,bloodwork_panel_missing <-> platelet,1.0
+bloodwork_panel_missing,inr,0.0,0/3,0.25,1/4,0.14,1/7,0.0,0/4,0.33,1/3,0.0,0/3,bloodwork_panel_missing --> inr,1.0
+bloodwork_panel_missing,sodium,0.33,1/3,0.25,1/4,0.29,2/7,0.0,0/4,0.67,2/3,0.0,0/3,bloodwork_panel_missing <-> sodium,0.5
+heart_rate,onset_to_icu_hrs,0.0,0/4,0.2,1/5,0.11,1/9,0.0,0/6,0.33,1/3,0.0,0/3,heart_rate <-- onset_to_icu_hrs,1.0
+bicarbonate,bloodwork_panel_missing,0.33,1/3,0.5,2/4,0.43,3/7,0.0,0/4,1.0,3/3,0.0,0/3,bicarbonate <-- bloodwork_panel_missing,0.67
+bicarbonate,creatinine_0to24h_max,0.0,0/4,0.2,1/5,0.11,1/9,0.0,0/6,0.33,1/3,0.0,0/3,bicarbonate --> creatinine_0to24h_max,1.0
+lactate_0to24h_max,lactate_0to24h_max_missing,0.33,1/3,0.25,1/4,0.29,2/7,0.0,0/4,0.67,2/3,0.0,0/3,lactate_0to24h_max <-> lactate_0to24h_max_missing,0.5
+onset_to_icu_hrs,vitals_panel_missing,0.0,0/3,0.5,2/4,0.29,2/7,0.0,0/4,0.67,2/3,0.0,0/3,onset_to_icu_hrs --> vitals_panel_missing,1.0
+mechvent_0to24h,onset_to_icu_hrs,0.25,1/4,0.2,1/5,0.22,2/9,0.0,0/6,0.67,2/3,0.0,0/3,mechvent_0to24h <-- onset_to_icu_hrs,1.0
+creatinine_baseline,heart_rate,0.0,0/4,0.0,0/5,0.0,0/9,0.0,0/6,0.0,0/3,0.33,1/3,,
+hemoglobin,platelet,0.0,0/4,0.2,1/5,0.11,1/9,0.0,0/6,0.33,1/3,0.0,0/3,hemoglobin --> platelet,1.0
+age,bilirubin,,,,,,,,,,,1.0,3/3,,
+bicarbonate,bilirubin_missing,,,,,,,,,,,1.0,3/3,,
+bicarbonate,lactate,,,,,,,,,,,1.0,3/3,,
+bilirubin,bilirubin_missing,,,,,,,,,,,1.0,3/3,,
+bilirubin,glucose,,,,,,,,,,,0.33,1/3,,
+bilirubin,inr,,,,,,,,,,,1.0,3/3,,
+bilirubin,platelet,,,,,,,,,,,0.67,2/3,,
+bilirubin,sodium,,,,,,,,,,,1.0,3/3,,
+bilirubin,sofa_0to24h_max,,,,,,,,,,,1.0,3/3,,
+bilirubin,temperature_c_0to24h_max,,,,,,,,,,,0.67,2/3,,
+bilirubin_missing,bloodwork_panel_missing,,,,,,,,,,,1.0,3/3,,
+bilirubin_missing,corticosteroids_0to24h,,,,,,,,,,,0.33,1/3,,
+bilirubin_missing,hemoglobin,,,,,,,,,,,0.33,1/3,,
+bilirubin_missing,inr_missing,,,,,,,,,,,1.0,3/3,,
+bilirubin_missing,platelet,,,,,,,,,,,0.33,1/3,,
+bilirubin_missing,sofa_0to24h_max,,,,,,,,,,,0.67,2/3,,
+bloodwork_panel_missing,lactate,,,,,,,,,,,0.33,1/3,,
+ckd_baseline,lactate,,,,,,,,,,,0.33,1/3,,
+heart_rate,lactate,,,,,,,,,,,0.33,1/3,,
+hemoglobin,lactate,,,,,,,,,,,1.0,3/3,,
+inr_missing,lactate_missing,,,,,,,,,,,1.0,3/3,,
+lactate,lactate_0to24h_max,,,,,,,,,,,1.0,3/3,,
+lactate,lactate_0to24h_max_missing,,,,,,,,,,,1.0,3/3,,
+lactate,lactate_missing,,,,,,,,,,,0.67,2/3,,
+lactate,onset_to_icu_hrs,,,,,,,,,,,0.33,1/3,,
+lactate,race,,,,,,,,,,,0.33,1/3,,
+lactate,vitals_panel_missing,,,,,,,,,,,0.67,2/3,,
+lactate_0to24h_max_missing,lactate_missing,,,,,,,,,,,1.0,3/3,,
+lactate_missing,mechvent_0to24h,,,,,,,,,,,0.33,1/3,,
+lactate_missing,onset_to_icu_hrs,,,,,,,,,,,1.0,3/3,,
+lactate_missing,spo2,,,,,,,,,,,1.0,3/3,,
+lactate_missing,wbc_0to24h_max,,,,,,,,,,,1.0,3/3,,

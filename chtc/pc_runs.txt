@@ -1,0 +1,7 @@
+pc_mv, pc_mv_main, main_raw.csv, 0.01, -1, -1
+pc_fisherz, pc_fisherz_main_simple, main_simple.csv, 0.01, -1, -1
+pc_fisherz, pc_fisherz_main_knn, main_knn.csv, 0.01, -1, -1
+pc_rcit, pc_rcit_main_simple, main_simple.csv, 0.01, 7500, -1
+pc_rcit, pc_rcit_main_knn, main_knn.csv, 0.01, 7500, -1
+pc_fisherz, pc_fisherz_sens_simple, sens_simple.csv, 0.01, -1, -1
+pc_fisherz, pc_fisherz_sens_knn, sens_knn.csv, 0.01, -1, -1

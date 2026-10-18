@@ -1,0 +1,13 @@
+run,algorithm,test,cohort,imputation,family,n,nodes,edges,density,isolated_nodes,n_-->,n_<->,n_o->,n_o-o,n_---
+fci_fisherz_main_knn,FCI,fisherz,main,knn,linear,5000,44,135,0.143,,76,51.0,7.0,1.0,0.0
+fci_fisherz_main_simple,FCI,fisherz,main,simple,linear,5000,44,137,0.145,,78,55.0,3.0,1.0,0.0
+fci_fisherz_sens_simple,FCI,fisherz,sens,simple,linear,5000,48,150,0.133,,80,64.0,5.0,1.0,0.0
+fci_mv_main,FCI,mv,main,none (test-wise deletion),linear,5000,40,97,0.124,,52,35.0,10.0,0.0,0.0
+fci_rcit_main_simple,FCI,rcit,main,simple,nonparametric,5000,44,61,0.064,"antibiotics_0to24h, corticosteroids_0to24h, crrt_24to48h, mechvent_24to48h",35,20.0,6.0,0.0,0.0
+pc_fisherz_main_knn,PC,fisherz,main,knn,linear,full,44,173,0.183,,172,0.0,0.0,0.0,1.0
+pc_fisherz_main_simple,PC,fisherz,main,simple,linear,full,44,177,0.187,,176,0.0,0.0,0.0,1.0
+pc_fisherz_sens_knn,PC,fisherz,sens,knn,linear,full,48,188,0.167,,187,0.0,0.0,0.0,1.0
+pc_fisherz_sens_simple,PC,fisherz,sens,simple,linear,full,48,192,0.17,,191,0.0,0.0,0.0,1.0
+pc_mv_main,PC,mv,main,none (test-wise deletion),linear,full,40,117,0.15,,116,0.0,0.0,0.0,1.0
+pc_rcit_main_knn,PC,rcit,main,knn,nonparametric,7500,44,83,0.088,"corticosteroids_0to24h, crrt_0to24h, crrt_24to48h",82,0.0,0.0,0.0,1.0
+pc_rcit_main_simple,PC,rcit,main,simple,nonparametric,7500,44,82,0.087,"crrt_0to24h, crrt_24to48h",81,0.0,0.0,0.0,1.0
