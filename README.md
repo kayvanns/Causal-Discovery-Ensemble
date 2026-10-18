@@ -166,7 +166,7 @@ tier's columns plus tier 0, so a later tier can't leak into an earlier one.
 | `main_simple.csv` | Median/mode imputed + indicators |
 | `main_knn.csv` | KNN imputed + indicators |
 | `sens_simple.csv` / `sens_knn.csv` | Adds lactate + bilirubin and their indicators |
-| `main_simple_with_mortality.csv` | One-off FCI runtime check, not core |
+
 
 ### 2.7 Discovery ensemble
 
